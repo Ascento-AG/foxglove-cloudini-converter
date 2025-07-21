@@ -5,7 +5,7 @@
   "publisher": "Ascento",
   "homepage": "https://github.com/Ascento-AG/foxglove-cloudini-converter",
   "version": "0.0.1",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "main": "./dist/extension.js",
   "keywords": [],
   "scripts": {
