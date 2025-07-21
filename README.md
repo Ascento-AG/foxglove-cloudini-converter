@@ -1,39 +1,24 @@
-# foxglove-extensions
+# foxglove-cloudini-converter
 
-[Foxglove](https://foxglove.dev) allows developers to create [extensions](https://docs.foxglove.dev/docs/visualization/extensions/introduction), or custom code that is loaded and executed inside the Foxglove application. This can be used to add custom panels. Extensions are authored in TypeScript using the `@foxglove/extension` SDK.
+A Foxglove extension to convert `Cloudini` compressed point clouds to a standard `PointCloud2` message.
 
-## Develop
+## Usage
 
-Extension development uses the `npm` package manager to install development dependencies and run build scripts.
+1. Install `npm install`
+2. Build the extension with `npm run package`
+3. Open the extension manager
+4. Drag and drop the `*.foxe` file into the extension manager
 
-To install extension dependencies, run `npm` from the root of the extension package.
+## Notes
 
-```sh
-npm install
-```
+[Cloudini](https://github.com/grizzi/cloudini) is a library for point cloud compression. See [the official repo](https://github.com/facontidavide/cloudini) for extended documentation and examples.
 
-To build and install the extension into your local Foxglove desktop app, run:
+This extension builds upon the cloudini core functionalities to decompress messages and allow visualization in Foxglove. Since at the time of writing, the mainstream fork does not yet integrate all the required functionality, this work is based on a [fork](https://github.com/grizzi/cloudini/tree/compression-wasm) of the original repository.
 
-```sh
-npm run local-install
-```
+## License
 
-Open the Foxglove desktop (or `ctrl-R` to refresh if it is already open). Your extension is installed and available within the app.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Package
+## 🚨 Important Notice
 
-Extensions are packaged into `.foxe` files. These files contain the metadata (package.json) and the build code for the extension.
-
-Before packaging, make sure to set `name`, `publisher`, `version`, and `description` fields in _package.json_. When ready to distribute the extension, run:
-
-```sh
-npm run package
-```
-
-This command will package the extension into a `.foxe` file in the local directory.
-
-## Publish
-
-You can publish the extension to the public registry or privately for your organization.
-
-See documentation here: https://docs.foxglove.dev/docs/visualization/extensions/publish/#packaging-your-extension
+Further development on this project is limited to the priorities of Ascento AG. This work is intended mainly for internal use. We appreciate your interest, but please be aware that we do not currently plan to support external contributions or ongoing community maintenance.

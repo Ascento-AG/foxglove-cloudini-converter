@@ -1,9 +1,9 @@
 {
   "name": "foxglove-cloudini-converter",
   "displayName": "foxglove-cloudini-converter",
-  "description": "",
+  "description": "A Foxglove extension to convert CloudINI files to Foxglove format",
   "publisher": "Ascento",
-  "homepage": "",
+  "homepage": "https://github.com/Ascento-AG/foxglove-cloudini-converter",
   "version": "0.0.1",
   "license": "UNLICENSED",
   "main": "./dist/extension.js",
