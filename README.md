@@ -11,9 +11,9 @@ A Foxglove extension to convert `Cloudini` compressed point clouds to a standard
 
 ## Notes
 
-[Cloudini](https://github.com/grizzi/cloudini) is a library for point cloud compression. See [the official repo](https://github.com/facontidavide/cloudini) for extended documentation and examples.
+`Cloudini` is a library for point cloud compression. See [the official repo](https://github.com/facontidavide/cloudini) for extended documentation and examples.
 
-This extension builds upon the cloudini core functionalities to decompress messages and allow visualization in Foxglove. Since at the time of writing, the mainstream fork does not yet integrate all the required functionality, this work is based on a [fork](https://github.com/grizzi/cloudini/tree/compression-wasm) of the original repository.
+This extension builds upon the cloudini core functionalities to decompress messages and allow visualization in Foxglove. Since at the time of writing, mainstream does not yet integrate all the required functionality, this work is based on a [fork](https://github.com/grizzi/cloudini/tree/compression-wasm) of the original repository.
 
 ## License
 
